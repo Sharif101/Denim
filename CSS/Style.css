@@ -1,0 +1,690 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900&family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --primary: #012a4a;
+  --secondary: #f0e615;
+  --font: "Nunito Sans", sans-serif;
+  --font2: "Manrope", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+/* 1536px */
+.container {
+  width: min(95%, 1600px);
+  margin-inline: auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.custom-btn {
+  display: flex;
+  align-items: center;
+  font-size: var(--font);
+  font-size: 18px;
+  font-weight: 600;
+  background-color: var(--secondary);
+  border: none;
+  padding: 15px 20px;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  cursor: pointer;
+}
+.custom-btn img {
+  padding-left: 10px;
+}
+
+.custom-title {
+  color: white;
+  background-color: var(--primary);
+  font-family: var(--font);
+  font-size: 24px;
+  font-weight: 400;
+  padding: 15px 20px;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+/* =========================  navbar css part start  =========================== */
+nav {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+nav .logo img {
+  width: 84px;
+  height: 84px;
+  padding-right: 5px;
+}
+
+nav p {
+  color: var(--primary);
+  font-family: sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+}
+nav p span {
+  color: var(--secondary);
+}
+/* =========================  navbar css part end  =========================== */
+
+/* =========================  banner css part start  =========================== */
+#banner-part {
+  background: url(../images/Untitled-1\ 1.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.banner-main {
+  display: flex;
+  padding-top: 200px;
+  padding-bottom: 70px;
+}
+
+.banner-main .img-1 {
+  position: relative;
+  z-index: 100;
+  left: 0%;
+  bottom: 3%;
+}
+.banner-main .img-2 {
+  position: absolute;
+  top: 4%;
+  right: 4%;
+  z-index: 0;
+}
+
+#banner-part .text-part .banner-ttile {
+  color: white;
+  background-color: var(--primary);
+  font-family: var(--font);
+  font-size: 24px;
+  font-weight: 400;
+  padding: 15px 20px;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+#banner-part .text-part h1 {
+  font-family: var(--font);
+  margin-top: 50px;
+  font-weight: 600;
+  font-size: 60px;
+  color: var(--primary);
+}
+
+#banner-part .text-part p {
+  color: var(--primary);
+  font-family: var(--font);
+  font-size: 24px;
+  font-weight: 400;
+  margin: 20px 0;
+}
+
+#banner-part .text-part span s {
+  font-size: 24px;
+  color: #608aab;
+  margin-right: 15px;
+}
+
+#banner-part .text-part span {
+  font-size: 56px;
+  font-weight: 700;
+  font-family: var(--font);
+}
+
+#banner-part .text-part .banner-end-text {
+  width: 576px;
+  margin-top: 30px;
+  font-weight: 400;
+  font-size: 25px;
+}
+.cs-btn img {
+  width: 60px;
+  margin-right: 10px;
+}
+.cs-btn {
+  font-size: 30px;
+  font-weight: 400;
+  margin-left: 85px;
+  margin-bottom: 14px;
+}
+/* =========================  banner css part end  =========================== */
+
+/* =========================  about css part start  =========================== */
+
+#about-part .about-title p {
+  font-size: 24px;
+  font-family: var(--font);
+  font-weight: 400;
+  color: var(--primary);
+  margin: 40px 0;
+}
+
+#about-part .about-main {
+  display: flex;
+}
+
+#about-part .about-main img {
+  width: 559px;
+  height: 839px;
+  transform: translateY(50%);
+}
+
+#about-part .about-main .image {
+  margin-top: -20%;
+  margin-right: 18%;
+}
+
+#about-part .about-main ul li img {
+  width: 18px;
+  height: 18px;
+}
+
+#about-part .about-main .text h3 {
+  font-size: 44px;
+}
+.ul-list {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.ul-list p {
+  padding-top: 12px;
+  margin-left: 10px;
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--primary);
+}
+
+.ul-flex {
+  display: flex;
+  margin-right: 30px;
+  justify-content: space-between;
+}
+/* =========================  about css part end  =========================== */
+
+/* =========================  demin css part start  =========================== */
+
+#demin-part .demin-main {
+  background: url(../images/damin.jpg) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 1145px;
+}
+#demin-part .demin-main .text p {
+  position: relative;
+  z-index: 100;
+  color: var(--secondary);
+  text-align: center;
+  margin: 0 auto;
+  margin-left: 20%;
+  padding-top: 100px;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+#demin-part .demin-main .text .sizes {
+  width: 474px;
+  margin-left: 45%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#demin-part .demin-main .text .sizes h4 {
+  color: var(--primary);
+  background: white;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 25px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+#demin-part .demin-main .text-2 {
+  position: relative;
+  z-index: 100;
+  width: 685px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 40%;
+}
+
+#demin-part .demin-main .text-2 p {
+  font-size: 40px;
+  color: white;
+}
+
+#demin-part .demin-main .text-2 .custom-btn {
+  margin: 0 auto;
+  margin-top: 40px;
+}
+/* =========================  demin css part end  =========================== */
+
+/* =========================  category css part start  =========================== */
+
+#category-part {
+  background-color: #f0f9ff;
+  padding: 90px 0;
+  padding-bottom: 300px;
+}
+
+#category-part .category-main {
+  display: flex;
+  justify-content: space-around;
+}
+
+#category-part .single-category {
+  width: 297px;
+  height: 356px;
+  background: white;
+  border-top-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+}
+#category-part .single-category .img {
+  width: 210px;
+  height: 212px;
+  padding-top: 40px;
+  margin: 0 auto;
+}
+
+#category-part .single-category .img img {
+  width: 100%;
+}
+#category-part .single-category .custom-title {
+  width: 90%;
+  font-size: 16px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.line-img {
+  width: 100%;
+  margin-top: 70px;
+}
+
+#category-part .text {
+  text-align: center;
+  font-family: var(--font);
+  font-size: 30px;
+  font-weight: 800;
+  margin-top: 50px;
+}
+
+#category-part .ul-flex {
+  margin-top: 30px;
+}
+
+#category-part .ul-flex p {
+  padding-top: 0;
+}
+
+/* =========================  category css part end  =========================== */
+
+/* =========================  video css part start  =========================== */
+
+#video-part .video-main {
+  background: url(../images/Mask\ group.png) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 824px;
+  transform: translateY(-25%);
+  position: relative;
+}
+
+#video-part .video-main img {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#video-part .text-part {
+  text-align: center;
+}
+#video-part .text-part h5 {
+  font-size: 35px;
+  font-weight: 600;
+  font-family: var(--font);
+  margin-bottom: 50px;
+}
+
+#video-part .text-part span {
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  padding: 20px 25px;
+}
+
+#video-part .text-part p {
+  margin-top: 70px;
+}
+/* =========================  video css part end  =========================== */
+
+/* =========================  price css part start  =========================== */
+
+#price-part .price-main {
+  background: url(../images/434\ 1.png) no-repeat center;
+  background-size: cover;
+  width: 900px;
+  height: 700px;
+  margin: 0 auto;
+  transform: translateY(50%);
+  margin-top: -230px;
+  position: relative;
+}
+
+#price-part .price-main .text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+#price-part .price-main .text h4 {
+  font-size: 30px;
+  font-weight: 700;
+  font-family: var(--font);
+}
+
+#price-part .price-main .text p {
+  padding: 20px 0;
+}
+
+#price-part .price-main .text .custom-btn {
+  margin-left: 25px;
+}
+
+/* =========================  price css part end  =========================== */
+
+/* =========================  employe css part start  =========================== */
+#employe-part {
+  background-color: #f0f9ff;
+}
+
+#employe-part .employe-main {
+  padding-top: 450px;
+  padding-bottom: 100px;
+}
+
+#employe-part .employe-main .employe-single {
+  width: 392px;
+  height: 330px;
+  text-align: center;
+  background-color: white;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+#employe-part .employe-main .employe-single .employe-picture {
+  width: 129px;
+  height: 129px;
+  transform: translateY(-50%);
+}
+
+#employe-part .employe-main .employe-single h4 {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: var(--font);
+  color: var(--primary);
+  margin-top: -40px;
+}
+
+#employe-part .employe-main .employe-single .line {
+  margin: 20px 0;
+}
+
+#employe-part .employe-main .employe-single p {
+  margin-top: 10px;
+  font-size: 18px;
+  padding: 0 10px;
+  color: var(--primary);
+}
+
+#employe-part .employe-main .employe-slider {
+  display: flex;
+  justify-content: space-around;
+}
+/* =========================  employe css part end  =========================== */
+
+/* =========================  order css part strat  =========================== */
+
+#order-part {
+  background: url(../images/Rect.png) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 940px;
+}
+
+#order-part h4 {
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: var(--font);
+  padding-top: 60px;
+  text-align: center;
+}
+#order-part .order-main {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+#order-part .left-side {
+  width: 560px;
+}
+
+#order-part .left-side p {
+  font-size: 20px;
+  color: white;
+}
+
+#order-part .left-side input {
+  width: 100%;
+  background: none;
+  border: 1px solid white;
+  margin: 10px 0;
+  padding: 15px 20px;
+}
+
+#order-part .left-side .payment {
+  background-color: white;
+  padding: 15px 20px;
+  border-top-left-radius: 30px;
+}
+
+#order-part .left-side .payment p {
+  color: var(--primary);
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 15px;
+}
+#order-part .left-side .payment span {
+  font-size: 17px;
+  margin-left: 14px;
+}
+#order-part .left-side .polygon {
+  transform: translate(350%, -90%);
+}
+.cash {
+  display: flex;
+  align-items: center;
+}
+
+#order-part .left-side .last {
+  margin-top: -18px;
+  background-color: var(--primary);
+  color: white;
+  padding: 15px 20px;
+  font-size: 17px;
+  border-bottom-right-radius: 30px;
+}
+
+#order-part .right-side {
+  width: 463px;
+  color: white;
+}
+
+#order-part .right-side .details {
+  border: 1px solid #ffffff;
+}
+
+#order-part .right-title {
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+
+/* #order-part .right-side .details {
+} */
+
+#order-part .right-side .details .product {
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid white; */
+  /* padding: 13px 20px; */
+  /* margin-top: 15px; */
+  font-family: var(--font);
+  padding: 15px 20px;
+}
+#order-part .right-side .details .show-products {
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  font-family: var(--font);
+}
+
+#order-part .right-side .details .show-products .info {
+  width: 171px;
+}
+#order-part .right-side .details .total-cost {
+  padding: 15px 20px;
+}
+#order-part .right-side .details .total-cost .total {
+  display: flex;
+  justify-content: space-between;
+}
+#order-part .right-side .details .total-cost .shipping {
+  padding-top: 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#order-part .right-side .details .total-cost .shipping .check label {
+  font-size: 12px;
+  padding-left: 7px;
+}
+
+#order-part .right-side .details .sum {
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#order-part .right-side .custom-btn {
+  width: 463px;
+  margin-top: 10px;
+}
+#order-part .right-side .custom-btn a {
+  margin: 0 auto;
+  color: var(--primary);
+}
+/* =========================  order css part end  =========================== */
+/* =========================  footertop css part start  =========================== */
+
+#footertop-part .footertop-main {
+  background: url(../images/Rectangle\ 4475.png) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 277px;
+  transform: translateY(-50%);
+}
+#footertop-part .footertop-main .text {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 40px;
+}
+#footertop-part .footertop-main .first {
+  color: white;
+}
+
+#footertop-part .footertop-main .first img {
+  margin: 10px 0;
+}
+
+#footertop-part .footertop-main .first p {
+  font-size: 12px;
+}
+
+#footertop-part .footertop-main .first .title {
+  font-size: 16px;
+  font-weight: 800;
+  font-family: var(--font);
+}
+#footertop-part .footertop-main .second {
+  font-size: 30px;
+  color: white;
+}
+#footertop-part .footertop-main .second span {
+  color: var(--secondary);
+}
+
+#footertop-part .footertop-main .third p {
+  color: var(--secondary);
+  font-size: 20px;
+}
+#footertop-part .footertop-main .third h2 {
+  color: white;
+  font-size: 40px;
+  font-family: var(--font);
+}
+/* =========================  footertop css part end  =========================== */
+/* =========================  footer css part start  =========================== */
+
+#footer-part .footer-main {
+  background: url(../images/pent.png) no-repeat center;
+  background-size: cover;
+  margin-top: -14.6%;
+}
+#footer-part .footer-main .icon {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: -6%;
+}
+#footer-part .footer-main .icon p {
+  margin-top: 10px;
+  color: white;
+  font-size: 20px;
+}
+#footer-part .footer-main .icon span {
+  color: var(--secondary);
+}
+/* =========================  footer css part end  =========================== */
